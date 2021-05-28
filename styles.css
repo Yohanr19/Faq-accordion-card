@@ -86,7 +86,7 @@ body {
 :hover.question {
   cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .card {
     width: 90%;
     min-width: 300px;
@@ -103,9 +103,13 @@ body {
   {
       right: 25px;
   }
-  .text-container
-  {
-      padding-right: 1rem;
-  }
-
 }
+@media (max-width: 330px) {
+    .card {
+        width: 100%;
+        min-width: 260px;
+        display: flex;
+        min-height: 90vh;
+        margin-top: 10%;
+      }
+ }
