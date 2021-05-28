@@ -1,0 +1,111 @@
+:root {
+  --divider-color: hsl(240, 5%, 91%);
+  --darker-neutral-text: hsl(237, 12%, 33%);
+  --lighter-neutral-text: hsl(240, 6%, 50%);
+  --background-violet: hsl(273, 75%, 66%);
+  --background-blue: hsl(240, 73%, 65%);
+  --soft-red-hover: hsl(14, 88%, 65%);
+  --dark-saturated-blue-select: hsl(238, 29%, 16%);
+  --normal: 400;
+  --bold: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  margin-left: 20px;
+  font-weight: var(--bold);
+  font-size: 2rem;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-family: "Kumbh Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: var(--normal);
+  background: linear-gradient(
+    to top,
+    var(--background-blue),
+    var(--background-violet)
+  );
+}
+.card {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+  width: 71%;
+  min-width: 800px;
+  min-height: 75%;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 20px;
+}
+#box-desktop {
+  position: relative;
+  bottom: 67%;
+}
+.text-container {
+  padding-right: 5rem;
+  min-width: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.question-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: color 0.5s;
+}
+.icon {
+  width: 5%;
+  height: 50%;
+  position: relative;
+  top: 25px;
+  right: 0px;
+}
+.img-container {
+  height: 358px;
+  position: relative;
+  right: 70px;
+  top: 40px;
+}
+:hover.question {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    margin-top: 10%;
+    background-image: url(./images/bg-pattern-mobile.svg);
+  }
+  #box-desktop {
+    position: relative;
+  }
+  .img-container 
+  {
+      right: 25px;
+  }
+  .text-container
+  {
+      padding-right: 1rem;
+  }
+
+}
