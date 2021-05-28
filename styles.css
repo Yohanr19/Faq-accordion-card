@@ -95,6 +95,7 @@ body {
     min-height: 90vh;
     margin-top: 10%;
     background-image: url(./images/bg-pattern-mobile.svg);
+    padding-right: 0;
   }
   #box-desktop {
     position: relative;
@@ -112,4 +113,8 @@ body {
         min-height: 90vh;
         margin-top: 10%;
       }
+     .text-container
+     {
+         padding-right: 0;
+     }
  }
