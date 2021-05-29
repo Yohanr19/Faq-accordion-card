@@ -42,6 +42,7 @@ body {
     var(--background-violet)
   );
 }
+
 .card
 {
   display: grid;
@@ -96,6 +97,10 @@ header
   top: 25px;
   right: 0px;
 }
+.question-answer
+{
+  margin-left: 40px;
+}
 :hover.question {
   cursor: pointer;
 }
@@ -109,7 +114,7 @@ header
   }
   body 
   {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
   }
   .card
