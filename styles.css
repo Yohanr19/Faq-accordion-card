@@ -14,10 +14,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
-header {
+.header {
   margin-left: 20px;
   font-weight: var(--bold);
   font-size: 2rem;
+  text-align: center;
 }
 .attribution {
   position: fixed;
@@ -83,10 +84,6 @@ body {
   width: inherit;
   height: auto;
 }
-header
-{
-  text-align: center;
-}
 .question-container {
   display: flex;
   flex-direction: row;
@@ -109,11 +106,10 @@ header
 }
 @media (min-width: 750px) 
 {
-  header {
-    margin-left: 20px;
-    font-weight: var(--bold);
-    font-size: 2rem;
+  .header {
     margin-top: 0;
+    text-align: center;
+    width: 10px;
   }
   body 
   {
