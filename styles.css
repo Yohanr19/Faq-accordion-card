@@ -46,18 +46,16 @@ body {
 .wrapper
 {
   position: relative;
-  margin-top: 100px;
-  max-width: 490px;
+  margin-top: 50px;
+  max-width: 400px;
 }
 .card
 {
   display: grid;
   grid-auto-rows: auto;
   background-color: white;
-  min-width:70vw;
   margin: 15px;
   border-radius: 20px;
-  max-width: inherit;
 }
 .img-container 
 {
@@ -67,22 +65,27 @@ body {
   background-position: top;
   width: 100%;
   height: auto;
-  position: relative;
-  top: -100px;
+  position: absolute;
+  top: -10%;
 }
 .box-container
 {
-  position: absolute;
-  z-index: 2;
-  top: -30px;
-  left: -40px;
+  display: none;
 }
-#woman-img 
+#woman-img-mobile
+{
+  
+  width: 80%;
+  height: auto;
+  margin: auto 0px;
+}
+#woman-img-desktop
 {
   position: absolute;
   top: 0px;
   width: inherit;
   height: auto;
+  display: none;;
 }
 .question-container {
   display: flex;
@@ -91,20 +94,24 @@ body {
   transition: color 0.5s;
 }
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   position: relative;
   top: 25px;
-  right: 0px;
+  margin-right: 9px;
 }
 :hover.question {
   cursor: pointer;
 }
 .text-container 
 {
-  margin-top: 30vh;
+  margin-top: 50%;
 }
-@media (min-width: 750px) 
+.answer 
+{
+  max-width: 50ch;
+}
+@media (min-width: 850px) 
 {
   .header {
     margin-top: 0;
@@ -153,6 +160,16 @@ body {
       position: absolute;
       top: 37%;
       left: -90px;
+      display: block;
+      z-index: 2;
+    }
+    #woman-img-mobile
+    {
+      display: none;
+    }
+    #woman-img-desktop
+    {
+      display: block;
     }
     .question-answer
     {
